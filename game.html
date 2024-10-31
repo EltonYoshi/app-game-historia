@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When Did That Happen?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/imgs/ampulheta.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/game.css">
+</head>
+
+
+<body id="body" onload="paginaCarregada()">
+    <section>
+        <div class="score-media">
+            <div class="score-bar">
+                <h2>Score</h2>
+            </div>
+            <h3 id="score-point-2">
+        </div>
+
+        <div class="container">
+            <div class="score">
+                <div class="score-bar">
+                    <h2>Score</h2>
+                </div>
+                <h3 id="score-point">
+                
+            </div>
+
+            <div class="bar-quest">
+                <h3 id="title"></h3>
+            </div>
+
+            <div class="img-container">
+                <img src="" id="img">
+            </div>
+
+            <div class="quest">
+                <div class="text-container"><p id="description"></p></div>
+                
+                <div class="input-container">
+                    <input class="form-control" id="resposta">
+                    <button class="btn" onclick="verificar()">Verificar</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <dialog class="answer-modal">
+        <div class="modal-container">
+            <img id="img-modal" src="">
+            <h1></h1>
+            <p></p>
+            <button class="btn" id="btn-modal"></button>
+        </div>
+    </dialog>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/imgs/ampulheta.png" type="image/x-icon">
+
+    <title>When Did That Happen?</title>
+</head>
+<body>
+    <div class="container">
+      <div class="bar">
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="text-container">
+        <img src="./assets/imgs/Logo.png" alt="" width="180px" class="logo">
+        <h1 class="title">When Did That Happen?</h1>
+        <a  href='game.html'><button class="btn">Começar</button></a>
+        <button class="btn" id='btn-instruction'>Instruções</button>
+      </div>
+      <div class="footer">
+        <img src="/assets/imgs/logo-cesuca.png">
+        <div class="footer-container">
+          <a href="/criadores.html">Criadores</a>
+        </div>
+      </div>
+    </div>
+    
+  
+    <dialog id="answerModal" class="answer-modal">
+      <div class="bar">
+        <div class="dot-container">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        
+        <div class="title-container"><h1>Instruções</h1></div>
+
+      </div>
+      
+      <div class="modal-container">
+        <p id="btn1-modal"> <b>Objetivo do jogo:</b></p>
+        <p> Testar seus conhecimentos das datas que marcaram a história.</p>
+        <p id="btn1-modal"> <b>Como jogar:</b></p>
+        <p> • Quando o jogo começa, você verá uma breve descrição de um acontecimento histórico e uma imagem referente ao assunto.</p>
+        <p id="btn1-modal">• Digite a data que você acha que ocooreu o acontecimento.</p>
+        <button class="btn" id="btn-modal" onclick="fecharPopup()">Fechar</button>
+      </div>
+    </dialog>
+
+    <script>
+     
+      function abrirPopup() {
+        const modal = document.getElementById('answerModal');
+        modal.showModal(); 
+      }
+
+      function fecharPopup() {
+        const modal = document.getElementById('answerModal');
+        modal.close();  
+      }
+
+      document.getElementsByClassName('btn')[1].addEventListener('click', abrirPopup);
+    </script>
+</body>
+</html>
